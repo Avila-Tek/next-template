@@ -1,0 +1,29 @@
+{
+  "recommendations": [
+    "aaron-bond.better-comments",
+    "abusaidm.html-snippets",
+    "bradlc.vscode-tailwindcss",
+    "christian-kohler.npm-intellisense",
+    "christian-kohler.path-intellisense",
+    "CoenraadS.bracket-pair-colorizer",
+    "dbaeumer.vscode-eslint",
+    "donjayamanne.githistory",
+    "dsznajder.es7-react-js-snippets",
+    "eamodio.gitlens",
+    "eg2.vscode-npm-script",
+    "esbenp.prettier-vscode",
+    "formulahendry.auto-close-tag",
+    "formulahendry.auto-rename-tag",
+    "mgmcdermott.vscode-language-babel",
+    "mikestead.dotenv",
+    "ms-vscode.vscode-typescript-next",
+    "msjsdiag.debugger-for-chrome",
+    "naumovs.color-highlight",
+    "Prisma.vscode-graphql",
+    "ritwickdey.LiveServer",
+    "VisualStudioExptTeam.vscodeintellicode",
+    "waderyan.gitblame",
+    "wayou.vscode-todo-highlight",
+    "wix.vscode-import-cost"
+  ]
+}
