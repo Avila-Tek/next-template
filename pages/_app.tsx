@@ -16,22 +16,24 @@ Router.events.on('routeChangeError', () => {
   NProgress.done();
 });
 
-const MyApp = ({ Component, pageProps }: AppProps) => (
-  <>
-    <Head>
-      <title>Proyecto Sabas Nieves</title>
-      <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;1,400&display=swap"
-        rel="preload"
-        as="style"
-      />
-      <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;1,400&display=swap"
-        rel="stylesheet"
-      />
-    </Head>
-    <Component {...pageProps} />
-  </>
-);
+function MyApp({ Component, pageProps }: AppProps) {
+  return (
+    <>
+      <Head>
+        <title>Plantilla Next.js | Avila Tek</title>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;1,400&display=swap"
+          rel="preload"
+          as="style"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;1,400&display=swap"
+          rel="stylesheet"
+        />
+      </Head>
+      <Component {...pageProps} />
+    </>
+  );
+}
 
 export default MyApp;

@@ -1,14 +1,26 @@
-# Next.js Template de Avila Tek
+# Avila Tek Next.js Template
 
-Este proyecto es un proyecto que usa [Next.js](https://nextjs.org/) bootstrapped con [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) por [vercel](https://vercel.com), al cual fue añadido la configuración de eslint, mas un serie de configuraciones de vscode.
+Esta plantilla es una configuración inicial para los proyecto que requieren de frontend en Avila Tek. Su intención es facilitar el inicio del desarrollo de un proyecto. Sin embargo, es una configuran considerablemente simple y dependiendo de la escala del proyecto pueden existir mas configuraciones que agregar.
 
 ## Contenido
+
+Este proyecto ha incluido y configurado las siguientes dependencias:
 
 1. [Next.js](https://nextjs.org/)
 2. [Tailwind css](https://tailwindcss.com/)
 3. [Eslint](https://eslint.org/)
 4. [Typescript](https://typescriptlang.org/)
 5. [NProgress](https://ricostacruz.com/nprogress/)
+
+## Como usarlo
+
+Por primero es clonar este repositorio
+
+```bash
+git clone https://github.com/Avila-Tek/next-template.git <folder_name>
+```
+
+En donde se debe cambiar `<folder_name>` por el nombre de la carpeta a utilizar. En caso de que este proyecto este dentro de una carpeta que ya contenga un repositorio de git debe eliminarse la carpeta `.git` de este repositorio.
 
 ---
 
@@ -24,9 +36,9 @@ npm run dev
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:7777](http://localhost:7777) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
 ## Learn More
 
