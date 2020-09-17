@@ -1,6 +1,8 @@
 # Avila Tek Next.js Template
 
-Esta plantilla es una configuración inicial para los proyecto que requieren de frontend en Avila Tek. Su intención es facilitar el inicio del desarrollo de un proyecto. Sin embargo, es una configuran considerablemente simple y dependiendo de la escala del proyecto pueden existir mas configuraciones que agregar.
+![Avila Tek Logo](https://avilatek.dev/assets/images/logo_white.png)
+
+Esta plantilla es una configuración inicial para los proyecto que requieren de frontend en Avila Tek. Su intención es facilitar el inicio del desarrollo de un proyecto. Sin embargo, es una configuran considerablemente simple y dependiendo de la escala del proyecto pueden existir mas dependencias que agregar.
 
 ## Contenido
 
@@ -21,6 +23,14 @@ git clone https://github.com/Avila-Tek/next-template.git <folder_name>
 ```
 
 En donde se debe cambiar `<folder_name>` por el nombre de la carpeta a utilizar. En caso de que este proyecto este dentro de una carpeta que ya contenga un repositorio de git debe eliminarse la carpeta `.git` de este repositorio.
+
+## Licencia
+
+Este proyecto se encuentra bajo la licencia de MIT
+
+## Autores
+
+1. [Jose R. Quevedo](https://github.com/zoomelectrico)
 
 ---
 

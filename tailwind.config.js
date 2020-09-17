@@ -6,10 +6,15 @@ const { fontFamily } = require('tailwindcss/defaultTheme');
 // tailwind.config.js
 module.exports = {
   plugins: [require('@tailwindcss/ui')],
+  future: {
+    removeDeprecatedGapUtilities: true,
+    purgeLayersByDefault: true,
+  },
   purge: {
     content: [
       './pages/**/*.{js,jsx,ts,tsx}',
       './components/**/*.{js,jsx,ts,tsx}',
+      './context/**/*,{js,jsx,ts,tsx}',
     ],
     defaultExtractor: (content) => content.match(/[\w-/:]+(?<!:)/g) || [],
   },
