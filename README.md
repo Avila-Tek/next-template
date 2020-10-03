@@ -24,6 +24,10 @@ git clone https://github.com/Avila-Tek/next-template.git <folder_name>
 
 En donde se debe cambiar `<folder_name>` por el nombre de la carpeta a utilizar. En caso de que este proyecto este dentro de una carpeta que ya contenga un repositorio de git debe eliminarse la carpeta `.git` de este repositorio.
 
+## New: Dockers
+
+A partir de la version `1.2.0` el repositorio soporta desarrollo remoto con dockers, para utilizarlo debes [descargar](https://docs.docker.com/get-docker/) Docker CE/EE 18.06+ and Docker Compose 1.21+ y las extensiones `ms-vscode-remote.remote-containers`, `ms-azuretools.vscode-docker` para mas informacion puedes leer este [post](https://code.visualstudio.com/docs/remote/remote-overview)
+
 ## Licencia
 
 Este proyecto se encuentra bajo la licencia de MIT
