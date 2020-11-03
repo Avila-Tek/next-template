@@ -9,6 +9,8 @@ module.exports = {
   future: {
     removeDeprecatedGapUtilities: true,
     purgeLayersByDefault: true,
+    defaultLineHeights: true,
+    standardFontWeights: true,
   },
   purge: {
     content: [
@@ -34,6 +36,24 @@ module.exports = {
       0: '0',
       2: '2px',
       4: '4px',
+    },
+    extend: {
+      colors: {
+        primary: {
+          100: '#787878',
+          200: '#5E5E5E',
+          300: '#454545',
+          400: '#2B2B2B',
+          500: '#121212',
+        },
+        secondary: {
+          100: '#DCFEEA',
+          200: '#AAFDCD',
+          300: '#79FCAF',
+          400: '#47FA92',
+          500: '#15F974',
+        },
+      },
     },
   },
   variants: [
