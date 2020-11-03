@@ -1,9 +1,29 @@
 import React from 'react';
+import * as Sentry from '@sentry/node';
 import Router from 'next/router';
-import NProgress from 'nprogress';
 import Head from 'next/head';
+import getConfig from 'next/config';
+import NProgress from 'nprogress';
 import { AppProps } from 'next/app';
+import { RewriteFrames } from '@sentry/integrations';
 import '../styles.css';
+
+if (process.env.NEXT_PUBLIC_SENTRY_DSN) {
+  const config = getConfig();
+  const distDir = `${config.serverRuntimeConfig.rootDir}/.next`;
+  Sentry.init({
+    enabled: process.env.NODE_ENV === 'production',
+    integrations: [
+      new RewriteFrames({
+        iteratee: (frame) => {
+          frame.filename = frame.filename.replace(distDir, 'app:///_next');
+          return frame;
+        },
+      }),
+    ],
+    dsn: process.env.NEXT_PUBLIC_SENTRY_DSN,
+  });
+}
 
 Router.events.on('routeChangeStart', () => {
   NProgress.start();
@@ -17,7 +37,9 @@ Router.events.on('routeChangeError', () => {
   NProgress.done();
 });
 
-function MyApp({ Component, pageProps }: AppProps) {
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
+function MyApp({ Component, pageProps, err }: AppProps) {
   return (
     <>
       <Head>
@@ -32,7 +54,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           rel="stylesheet"
         />
       </Head>
-      <Component {...pageProps} />
+      <Component {...pageProps} err={err} />
     </>
   );
 }

@@ -2,7 +2,9 @@
 
 ![Avila Tek Logo](https://avilatek.dev/assets/images/logo_white.png)
 
-Esta plantilla es una configuración inicial para los proyecto que requieren de frontend en Avila Tek. Su intención es facilitar el inicio del desarrollo de un proyecto. Sin embargo, es una configuran considerablemente simple y dependiendo de la escala del proyecto pueden existir mas dependencias que agregar.
+Este repositorio es una plantilla para los Landing Page de Avila Tek, esta configurado para clonarlo, instalar las dependencias y empezar a trabajar, en caso de que estes buscando un template para un proyecto [full stack](https://github.com/Avila-Tek/full-stack-template) puedes referirte a este [repositorio](https://github.com/Avila-Tek/full-stack-template).
+
+En [Avila Tek](https://avilatek.dev) estamos comprometido con el Open Source, ya que nuestra compañía ha crecido alrededor de esta gran comunidad y a traves de pequeños proyectos, estamos tratado de volver lo que esta comunidad nos ha dado.
 
 ## Contenido
 
@@ -13,6 +15,7 @@ Este proyecto ha incluido y configurado las siguientes dependencias:
 3. [Eslint](https://eslint.org/)
 4. [Typescript](https://typescriptlang.org/)
 5. [NProgress](https://ricostacruz.com/nprogress/)
+6. [Sentry](https://sentry.io/)
 
 ## Como usarlo
 
@@ -22,11 +25,34 @@ Por primero es clonar este repositorio
 git clone https://github.com/Avila-Tek/next-template.git <folder_name>
 ```
 
-En donde se debe cambiar `<folder_name>` por el nombre de la carpeta a utilizar. En caso de que este proyecto este dentro de una carpeta que ya contenga un repositorio de git debe eliminarse la carpeta `.git` de este repositorio.
+En donde se debe cambiar `<folder_name>` por el nombre de la carpeta a utilizar. Después git debe eliminarse la carpeta `.git` de este repositorio e iniciar un nuevo proyecto de git al cual le añadirás el correspondiente remoto. Para ello deberás hacer lo siguiente:
 
-## New: Dockers
+```bash
+cd <folder_name>
+sudo rm -r .git/
+git init
+```
 
-A partir de la version `1.2.0` el repositorio soporta desarrollo remoto con dockers, para utilizarlo debes [descargar](https://docs.docker.com/get-docker/) Docker CE/EE 18.06+ and Docker Compose 1.21+ y las extensiones `ms-vscode-remote.remote-containers`, `ms-azuretools.vscode-docker` para mas informacion puedes leer este [post](https://code.visualstudio.com/docs/remote/remote-overview)
+Una vez configurado git deberás instalar las dependencias e iniciar el servidor de desarrollo, para ellos deberás hacer
+
+```bash
+npm install
+npm run dev
+```
+
+Luego abre tu navegador en [http://localhost:7777](http://localhost:7777) para ver el resultado
+
+### Configurar Sentry
+
+Para configurar Sentry comunicate con el Lead Engineer para que te facilite los token de sentry y como referencia puedes leer el ejemplo de [next.js](https://github.com/vercel/next.js/tree/canary/examples/with-sentry)
+
+## Changelog
+
+Puedes revisar el changelog [aquí](/CHANGELOG.md)
+
+## Dockers
+
+A partir de la version `1.2.0` el repositorio soporta desarrollo remoto con dockers, para utilizarlo debes [descargar](https://docs.docker.com/get-docker/) Docker CE/EE 18.06+ and Docker Compose 1.21+ y las extensiones `ms-vscode-remote.remote-containers`, `ms-azuretools.vscode-docker` para mas información puedes leer este [post](https://code.visualstudio.com/docs/remote/remote-overview)
 
 ## Licencia
 
@@ -40,20 +66,6 @@ Este proyecto se encuentra bajo la licencia de MIT
 
 Continuación del README.md generado por `create-next-app`
 
-## Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-```
-
-Open [http://localhost:7777](http://localhost:7777) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
-
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
@@ -65,6 +77,6 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 ## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The easiest way to deploy your Next.js app is to use the [Vercel](https://vercel.com/) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
