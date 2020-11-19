@@ -5,6 +5,7 @@ const { fontFamily } = require('tailwindcss/defaultTheme');
 
 // tailwind.config.js
 module.exports = {
+  darkMode: 'media',
   plugins: [require('@tailwindcss/ui')],
   future: {
     removeDeprecatedGapUtilities: true,
