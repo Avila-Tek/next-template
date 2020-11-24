@@ -1,9 +1,9 @@
 import React from 'react';
+import NProgress from 'nprogress';
 import * as Sentry from '@sentry/node';
 import Router from 'next/router';
 import Head from 'next/head';
 import getConfig from 'next/config';
-import NProgress from 'nprogress';
 import { AppProps } from 'next/app';
 import { RewriteFrames } from '@sentry/integrations';
 import '../styles.css';
