@@ -9,6 +9,12 @@
     "start": "next start",
     "lint": "eslint . --fix"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint",
+      "pre-push": "npm run lint && npm run build"
+    }
+  },
   "dependencies": {
     "@sentry/integrations": "^5.29.0",
     "@sentry/node": "^5.29.0",
