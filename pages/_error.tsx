@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/ban-ts-comment */
-import NextErrorComponent from 'next/error';
 import * as Sentry from '@sentry/node';
+import NextErrorComponent from 'next/error';
 
 const MyError = ({ statusCode, hasGetInitialPropsRun, err }) => {
   if (!hasGetInitialPropsRun && err) {
@@ -13,7 +13,7 @@ const MyError = ({ statusCode, hasGetInitialPropsRun, err }) => {
   return <NextErrorComponent statusCode={statusCode} />;
 };
 
-MyError.getInitialProps = async ({ res, err, asPath }) => {
+export const getInitialProps = async ({ res, err, asPath }) => {
   // @ts-ignore
   const errorInitialProps = await NextErrorComponent.getInitialProps({
     res,
