@@ -29,7 +29,7 @@ En donde se debe cambiar `<folder_name>` por el nombre de la carpeta a utilizar.
 
 ```bash
 cd <folder_name>
-sudo rm -r .git/
+rm -rf .git/
 git init
 ```
 
@@ -50,33 +50,23 @@ Para configurar Sentry comunicate con el Lead Engineer para que te facilite los 
 
 Puedes revisar el changelog [aquí](/CHANGELOG.md)
 
-## Dockers
-
-A partir de la version `1.2.0` el repositorio soporta desarrollo remoto con dockers, para utilizarlo debes [descargar](https://docs.docker.com/get-docker/) Docker CE/EE 18.06+ and Docker Compose 1.21+ y las extensiones `ms-vscode-remote.remote-containers`, `ms-azuretools.vscode-docker` para mas información puedes leer este [post](https://code.visualstudio.com/docs/remote/remote-overview)
-
 ## Licencia
 
 Este proyecto se encuentra bajo la licencia de MIT
 
+## Saber mas
+
+Para conocer mas sobre Next.js, puedes observar los siguientes links:
+
+- [Documentación de Next.js](https://nextjs.org/docs) - aprende sobre los features y la API de Next.js.
+- [Aprende Next.js](https://nextjs.org/learn) - un tutorial interactivo de Next.js.
+
+## Deploy en Vercel
+
+La forma mas sencilla de hacer deploy de una app de next.js es en [Vercel](https://vercel.com/).
+
+Revisa la [documentation de despliegues de Next.js](https://nextjs.org/docs/deployment) para conocer mas.
+
 ## Autores
 
 1. [Jose R. Quevedo](https://github.com/zoomelectrico)
-
----
-
-Continuación del README.md generado por `create-next-app`
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel](https://vercel.com/) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.

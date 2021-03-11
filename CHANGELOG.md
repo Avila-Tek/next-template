@@ -5,6 +5,25 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.7.0] - 2021-03-11
+
+### Added
+
+- Added `framer-motion`, `avilatek-utils` and `nanoid` as dependencies
+- Volta config to `package.json` to pin `node >= 14` and `npm >= 7`
+
+### Changed
+
+- Update dependencies
+- Fix a bug on `tailwind.config.js`
+- Remove unnecessary extension from `.vscode/extensions.json`
+- Move to `npm@^7` to use `package-lock.json v2`
+- Update `README.md`
+
+### Removed
+
+- Remove the container implementation (`.devcontainer/**`) since it hasn't been used
+
 ## [1.6.0] - 2020-12-12
 
 ### Added
