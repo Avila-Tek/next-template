@@ -1,28 +1,13 @@
 import React from 'react';
 import NProgress from 'nprogress';
-import * as Sentry from '@sentry/node';
 import Router from 'next/router';
 import Head from 'next/head';
-import getConfig from 'next/config';
 import { AppProps } from 'next/app';
-import { RewriteFrames } from '@sentry/integrations';
+import { init } from '../lib/sentry';
 import '../styles.css';
 
 if (process.env.NEXT_PUBLIC_SENTRY_DSN) {
-  const config = getConfig();
-  const distDir = `${config.serverRuntimeConfig.rootDir}/.next`;
-  Sentry.init({
-    enabled: process.env.NODE_ENV === 'production',
-    integrations: [
-      new RewriteFrames({
-        iteratee: (frame) => {
-          frame.filename = frame.filename.replace(distDir, 'app:///_next');
-          return frame;
-        },
-      }),
-    ],
-    dsn: process.env.NEXT_PUBLIC_SENTRY_DSN,
-  });
+  init();
 }
 
 Router.events.on('routeChangeStart', () => {
