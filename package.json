@@ -1,6 +1,6 @@
 {
   "name": "@avila-tek/next-template",
-  "version": "1.8.0",
+  "version": "1.9.0",
   "description": "A next.js template for starting frontend projects in Avila Tek",
   "private": true,
   "scripts": {
@@ -11,7 +11,8 @@
     "git:add": "git add .",
     "precommit": "run-s lint git:add",
     "prepush": "run-s lint git:add",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "setup-sentry": "npx @sentry/wizard -i nextjs"
   },
   "husky": {
     "hooks": {
@@ -20,15 +21,11 @@
     }
   },
   "dependencies": {
-    "@sentry/integrations": "^6.4.1",
-    "@sentry/node": "^6.4.1",
-    "@sentry/react": "^6.4.1",
-    "@sentry/tracing": "^6.4.1",
-    "@sentry/webpack-plugin": "^1.15.1",
+    "@sentry/nextjs": "^6.7.2",
     "avilatek-utils": "^0.1.0",
     "framer-motion": "^4.1.17",
     "nanoid": "^3.1.23",
-    "next": "10.2.3",
+    "next": "11.0.1",
     "next-compose-plugins": "^2.2.1",
     "nprogress": "^0.2.0",
     "react": "17.0.2",
@@ -36,32 +33,33 @@
   },
   "devDependencies": {
     "@tailwindcss/aspect-ratio": "^0.2.1",
-    "@tailwindcss/forms": "^0.3.2",
+    "@tailwindcss/forms": "^0.3.3",
     "@tailwindcss/typography": "^0.4.1",
-    "@types/node": "^15.6.0",
+    "@types/node": "^15.12.4",
     "@types/nprogress": "^0.2.0",
-    "@types/react": "^17.0.6",
-    "@typescript-eslint/eslint-plugin": "^4.25.0",
-    "@typescript-eslint/parser": "^4.25.0",
-    "autoprefixer": "^10.2.5",
+    "@types/react": "^17.0.11",
+    "@typescript-eslint/eslint-plugin": "^4.28.0",
+    "@typescript-eslint/parser": "^4.28.0",
+    "autoprefixer": "^10.2.6",
     "babel-eslint": "^10.1.0",
-    "eslint": "^7.27.0",
+    "eslint": "^7.29.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-avilatek": "^1.5.0",
     "eslint-config-avilatek-typescript": "^1.5.0",
+    "eslint-config-next": "^11.0.1",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-html": "^6.1.2",
-    "eslint-plugin-import": "^2.23.3",
+    "eslint-plugin-import": "^2.23.4",
     "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-prettier": "^3.4.0",
-    "eslint-plugin-react": "^7.23.2",
+    "eslint-plugin-react": "^7.24.0",
     "eslint-plugin-react-hooks": "^4.2.0",
     "husky": "^6.0.0",
     "npm-run-all": "^4.1.5",
-    "postcss": "^8.3.0",
+    "postcss": "^8.3.5",
     "postcss-import": "^14.0.2",
-    "prettier": "^2.3.0",
-    "tailwindcss": "^2.1.2",
-    "typescript": "^4.2.4"
+    "prettier": "^2.3.1",
+    "tailwindcss": "^2.2.4",
+    "typescript": "^4.3.4"
   }
 }
