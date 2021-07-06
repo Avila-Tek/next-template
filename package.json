@@ -1,12 +1,12 @@
 {
   "name": "@avila-tek/next-template",
-  "version": "1.9.0",
+  "version": "2.0.0",
   "description": "A next.js template for starting frontend projects in Avila Tek",
   "private": true,
   "scripts": {
-    "dev": "next dev -p 7777",
+    "dev": "next dev",
     "build": "next build",
-    "start": "next start -p 7777",
+    "start": "next start",
     "lint": "eslint . --fix",
     "git:add": "git add .",
     "precommit": "run-s lint git:add",
@@ -21,7 +21,7 @@
     }
   },
   "dependencies": {
-    "@sentry/nextjs": "^6.7.2",
+    "@sentry/nextjs": "^6.8.0",
     "avilatek-utils": "^0.1.0",
     "framer-motion": "^4.1.17",
     "nanoid": "^3.1.23",
@@ -35,14 +35,14 @@
     "@tailwindcss/aspect-ratio": "^0.2.1",
     "@tailwindcss/forms": "^0.3.3",
     "@tailwindcss/typography": "^0.4.1",
-    "@types/node": "^15.12.4",
+    "@types/node": "^16.0.0",
     "@types/nprogress": "^0.2.0",
-    "@types/react": "^17.0.11",
-    "@typescript-eslint/eslint-plugin": "^4.28.0",
-    "@typescript-eslint/parser": "^4.28.0",
+    "@types/react": "^17.0.13",
+    "@typescript-eslint/eslint-plugin": "^4.28.2",
+    "@typescript-eslint/parser": "^4.28.2",
     "autoprefixer": "^10.2.6",
     "babel-eslint": "^10.1.0",
-    "eslint": "^7.29.0",
+    "eslint": "^7.30.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-avilatek": "^1.5.0",
     "eslint-config-avilatek-typescript": "^1.5.0",
@@ -54,12 +54,12 @@
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-react": "^7.24.0",
     "eslint-plugin-react-hooks": "^4.2.0",
-    "husky": "^6.0.0",
+    "husky": "^7.0.0",
     "npm-run-all": "^4.1.5",
     "postcss": "^8.3.5",
     "postcss-import": "^14.0.2",
-    "prettier": "^2.3.1",
+    "prettier": "^2.3.2",
     "tailwindcss": "^2.2.4",
-    "typescript": "^4.3.4"
+    "typescript": "^4.3.5"
   }
 }
