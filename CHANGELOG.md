@@ -5,6 +5,51 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.1.0] - 2021-08-17
+
+### Changed
+
+- Update dependencies
+
+## [2.0.0] - 2021-07-05
+
+### Added
+
+- Add support for Dockers deployment
+
+## [1.9.0] - 2021-06-25
+
+### Added
+
+- New sentry integration with the `@sentry/nextjs` sdk
+- _npm_ script to configure sentry vars
+- Updated to `next.js` `v11`
+- Added `eslint-config-next`
+
+### Changed
+
+- Update dependencies
+- NProgress implementation based on new `next/router` events
+
+### Remove
+
+- Old sentry integration and it's dependencies
+
+## [1.8.0] - 2021-03-11
+
+### Added
+
+- Added support for webpack 5
+
+### Changed
+
+- Update dependencies
+- Rewrite sentry implementation
+
+### Removed
+
+- Volta
+
 ## [1.7.0] - 2021-03-11
 
 ### Added
