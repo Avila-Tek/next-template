@@ -1,4 +1,4 @@
-# Avila Tek Next.js Template
+# Avila Tek Next.js Template!
 
 ![Avila Tek Logo](https://avilatek.dev/assets/images/logo_white.png)
 
