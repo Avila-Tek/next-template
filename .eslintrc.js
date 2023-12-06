@@ -1,15 +1,19 @@
+/** @type {import('eslint').Linter.Config} */
 module.exports = {
-  extends: ['avilatek-typescript', 'plugin:@next/next/recommended'],
+  extends: ['next/core-web-vitals', 'prettier'],
+  plugins: ['prettier'],
   rules: {
-    '@typescript-eslint/explicit-module-boundary-types': 'off',
-    'react/jsx-props-no-spreading': 'off',
-    'jsx-a11y/label-has-associated-control': 'off',
-    'no-use-before-define': 'off',
-    'prefer-arrow-callback': 'off',
-    'import/no-cycle': 'off',
-    '@typescript-eslint/no-empty-function': 'warn',
-    '@next/next/no-img-element': 'off',
-    'react/function-component-definition': 'off',
-    'react/no-unstable-nested-components': 'off',
+    'prettier/prettier': [
+      'error',
+      {
+        printWidth: 80,
+        bracketSpacing: true,
+        semi: true,
+        singleQuote: true,
+        trailingComma: 'es5',
+        tabWidth: 2,
+        useTabs: false,
+      },
+    ],
   },
 };

@@ -1,72 +1,36 @@
-# Avila Tek Next.js Template!
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-![Avila Tek Logo](https://avilatek.dev/assets/images/logo_white.png)
+## Getting Started
 
-Este repositorio es una plantilla para los Landing Page de Avila Tek, esta configurado para clonarlo, instalar las dependencias y empezar a trabajar, en caso de que estes buscando un template para un proyecto [full stack](https://github.com/Avila-Tek/full-stack-template) puedes referirte a este [repositorio](https://github.com/Avila-Tek/full-stack-template).
-
-En [Avila Tek](https://avilatek.dev) estamos comprometido con el Open Source, ya que nuestra compañía ha crecido alrededor de esta gran comunidad y a traves de pequeños proyectos, estamos tratado de volver lo que esta comunidad nos ha dado.
-
-## Contenido
-
-Este proyecto ha incluido y configurado las siguientes dependencias:
-
-1. [Next.js](https://nextjs.org/)
-2. [Tailwind css](https://tailwindcss.com/)
-3. [Eslint](https://eslint.org/)
-4. [Typescript](https://typescriptlang.org/)
-5. [NProgress](https://ricostacruz.com/nprogress/)
-6. [Sentry](https://sentry.io/)
-
-## Como usarlo
-
-Por primero es clonar este repositorio
+First, run the development server:
 
 ```bash
-git clone https://github.com/Avila-Tek/next-template.git <folder_name>
-```
-
-En donde se debe cambiar `<folder_name>` por el nombre de la carpeta a utilizar. Después git debe eliminarse la carpeta `.git` de este repositorio e iniciar un nuevo proyecto de git al cual le añadirás el correspondiente remoto. Para ello deberás hacer lo siguiente:
-
-```bash
-cd <folder_name>
-rm -rf .git/
-git init
-```
-
-Una vez configurado git deberás instalar las dependencias e iniciar el servidor de desarrollo, para ellos deberás hacer
-
-```bash
-npm install
 npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
 
-Luego abre tu navegador en [http://localhost:7777](http://localhost:7777) para ver el resultado
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-### Configurar Sentry
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-Para configurar Sentry comunicate con el Lead Engineer para que te facilite los token de sentry y como referencia puedes leer el ejemplo de [next.js](https://github.com/vercel/next.js/tree/canary/examples/with-sentry)
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Changelog
+## Learn More
 
-Puedes revisar el changelog [aquí](/CHANGELOG.md)
+To learn more about Next.js, take a look at the following resources:
 
-## Licencia
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-Este proyecto se encuentra bajo la licencia de MIT
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Saber mas
+## Deploy on Vercel
 
-Para conocer mas sobre Next.js, puedes observar los siguientes links:
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-- [Documentación de Next.js](https://nextjs.org/docs) - aprende sobre los features y la API de Next.js.
-- [Aprende Next.js](https://nextjs.org/learn) - un tutorial interactivo de Next.js.
-
-## Deploy en Vercel
-
-La forma mas sencilla de hacer deploy de una app de next.js es en [Vercel](https://vercel.com/).
-
-Revisa la [documentation de despliegues de Next.js](https://nextjs.org/docs/deployment) para conocer mas.
-
-## Autores
-
-1. [Jose R. Quevedo](https://github.com/zoomelectrico)
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
